@@ -1,3 +1,4 @@
+// express é uma biblioteca para subir o servidor nodejs
 const express = require('express')
 const app = express()
 
