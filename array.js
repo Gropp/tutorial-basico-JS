@@ -45,10 +45,31 @@ console.log('Todos os elementos do arry são pares? ', TodosOsNumerosDoArrayPare
 // conta quantos elementos te no array
 console.log(array.length);
 
+
+// funções que não seguem o paradigma funcional pois alteram o array origem
+
 // adicionando um item no array - apenda no final
 // essa propriedade do array modifica o array original
 array.push(13);
 console.log('Adicionado o número 13 no array ', array);
 
 // remover o ultimo elemento do array
-array.pop()
+array.pop();
+console.log('Apagando o ultimo elemento do array ', array);
+
+// a função splice (posicao, elementos a deletar, elemento a adicionar)
+// adicionando na posicao 1 o elemento 20
+array.splice(1, 0, 20);
+console.log('Adiciona na posicao 1 o numero 20 no array ', array);
+
+// deletando na posicao 1, 1 elemento
+array.splice(1, 1);
+console.log('deleta na posicao 1, um elemento no array ', array);
+
+// deletando na posicao 1, 2 elementos
+array.splice(1, 2);
+console.log('deleta na posicao 1, dois elementos no array ', array);
+
+// deletando na posicao 1, e coloca um novo elemento nesta posição, como se fosse update
+array.splice(0, 1, 30);
+console.log('deleta na posicao 0, um elemento e coloca o 30 na mesma posição no array ', array);
